@@ -1,13 +1,277 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <title>Moja firma</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <title>Firma IT – Rozwiązania Software & IoT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --bg-light: #020617;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --border: #1f2933;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Ubuntu, Cantarell, sans-serif;
+      background: linear-gradient(180deg, var(--bg), var(--bg-light));
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 64px 24px;
+    }
+
+    h1, h2, h3 {
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      letter-spacing: -0.03em;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-top: 64px;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      margin-top: 32px;
+    }
+
+    p {
+      color: var(--muted);
+      max-width: 850px;
+    }
+
+    .accent {
+      color: var(--accent);
+    }
+
+    .hero {
+      padding-bottom: 80px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+    }
+
+    .section {
+      margin-top: 64px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      margin-top: 32px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, #020617, var(--card));
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 12px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      color: var(--muted);
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .tag {
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #020617;
+      border: 1px solid var(--border);
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    footer {
+      margin-top: 96px;
+      padding-top: 32px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    footer strong {
+      color: var(--text);
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Strona działa 🚀</h1>
-  <p>To jest wizytówka mojej firmy.</p>
+  <main class="container">
+
+    <!-- HERO -->
+    <section class="hero">
+      <h1>
+        Nowoczesne rozwiązania <span class="accent">software & IoT</span>
+      </h1>
+      <p>
+        Jesteśmy firmą IT specjalizującą się w projektowaniu i wytwarzaniu
+        niezawodnego oprogramowania, ze szczególnym naciskiem na systemy
+        IoT, bezpieczeństwo oraz architekturę mikroserwisową.
+        Dostarczamy skalowalne i bezpieczne rozwiązania wspierające
+        kluczowe procesy biznesowe naszych klientów.
+      </p>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section">
+      <h2>Zakres usług</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Wytwarzanie oprogramowania</h3>
+          <p>
+            Projektowanie i implementacja aplikacji backendowych
+            opartych o Java i Spring, z naciskiem na jakość,
+            bezpieczeństwo i skalowalność.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Rozwiązania IoT</h3>
+          <p>
+            Tworzenie i rozwój systemów dla urządzeń połączonych,
+            obejmujących zarządzanie urządzeniami, monitoring,
+            uwierzytelnianie i certyfikację.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Bezpieczeństwo i IAM</h3>
+          <p>
+            Projektowanie oraz wdrażanie systemów uwierzytelniania
+            i autoryzacji zgodnych ze standardami OAuth2, OIDC,
+            SSO oraz X.509.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section">
+      <h2>Doświadczenie i kompetencje</h2>
+      <p>
+        Od 2018 roku realizujemy projekty z obszaru inżynierii
+        oprogramowania, obejmujące pełny cykl życia systemu –
+        od analizy i architektury, przez implementację,
+        po wdrożenie i utrzymanie produkcyjne.
+        Posiadamy doświadczenie w prowadzeniu zespołów,
+        współpracy z klientami oraz rozwiązywaniu problemów
+        w środowiskach produkcyjnych.
+      </p>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section">
+      <h2>Wybrane projekty</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>NORDEX</h3>
+          <p><strong>Rola:</strong> Java Developer</p>
+          <ul>
+            <li>Rozwój i rozszerzanie istniejącego kodu w Java, Kotlin i Spring</li>
+            <li>Tworzenie i utrzymanie testów jednostkowych</li>
+            <li>Wsparcie konfiguracji CI oraz przygotowanie danych testowych</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Cumulocity</h3>
+          <p><strong>Rola:</strong> Java Developer (od 2019)</p>
+          <ul>
+            <li>Implementacja OAuth 2.0 i OpenID Connect</li>
+            <li>Obsługa uwierzytelniania urządzeń przy użyciu certyfikatów X.509</li>
+            <li>Współtworzenie wewnętrznego Certificate Authority</li>
+            <li>Odpowiedzialność za obszar bezpieczeństwa i IAM</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNOLOGIES -->
+    <section class="section">
+      <h2>Technologie</h2>
+      <div class="tags">
+        <span class="tag">Java</span>
+        <span class="tag">Spring Boot</span>
+        <span class="tag">Spring Security</span>
+        <span class="tag">OAuth2 / OIDC</span>
+        <span class="tag">X.509</span>
+        <span class="tag">JWT</span>
+        <span class="tag">Docker</span>
+        <span class="tag">Kubernetes</span>
+        <span class="tag">Linux</span>
+        <span class="tag">CI/CD</span>
+        <span class="tag">MongoDB</span>
+        <span class="tag">SQL</span>
+        <span class="tag">React</span>
+        <span class="tag">Git</span>
+      </div>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section class="section">
+      <h2>Certyfikaty</h2>
+      <ul>
+        <li>Certyfikat Kubernetes Maestro „W Kontenerach”</li>
+        <li>Sages – Kubernetes vs Java</li>
+        <li>GenAI</li>
+      </ul>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>
+        <strong>Kontakt</strong><br />
+        Janusz Kowalski<br />
+        Warszawa<br />
+        NIP: XXXXX<br />
+        Telefon: xxx-xxx-xxx
+      </p>
+    </footer>
+
+  </main>
 </body>
 </html>
 
